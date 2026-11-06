@@ -1,67 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Kalkulator Nilai</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>akhmad alfin izzatillah | Kontak</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <header>
-        <h2>Andi Pratama</h2>
+  <header>
+    <div class="container navbar">
+      <h1>AKHMAD ALFIN IZZTILLAH</h1>
+      <nav class="menu-laptop">
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="proyek.html">Proyek</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="kalkulator.html">kalkulator nilai</a></li>
+        </ul>
+      </nav>
+      <!-- Tantangan: menu ponsel yang bisa dibuka-tutup -->
+      <details class="menu-ponsel">
+        <summary>Menu</summary>
         <nav>
-            <a href="#">Beranda</a>
-            <a href="#">Proyek</a>
-            <a href="#">Kontak</a>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="proyek.html">Proyek</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            <li><a href="kalkulator.html">kalkulator nilai</a></li>
+          </ul>
         </nav>
-    </header>
+      </details>
+    </div>
+  </header>
 
-    <main>
-        <h2>Kalkulator Nilai</h2>
+  <main>
+    <div class="container">
+      <section class="kartu">
+        <h2>KALKULATOR NILAI</h2>
+        <p>Masukkan nilai tugas, UTS, dan UAS lalu tekan tombol hitung</p>
 
-        <p>Masukkan nilai tugas, UTS, dan UAS, lalu tekan tombol Hitung.</p>
+        <form>
+          <p>
+            <label for="nama">nilai tugas</label><br>
+            <input type="text" id="tugas" name="tugas" placeholder="Contoh: 85" required>
+          </p>
+          <p>
+            <label for="email">nilai UTS</label><br>
+            <input type="email" id="uts" name="uts" placeholder="contoh: 80" required>
+          </p>
+          <p>
+            <label for="hp">nilai UAS</label><br>
+            <input type="tel" id="uas" name="uas" placeholder="contoh: 75" required>
+          </p>
+          
+          <button type="button" id="hitung">Hitung nilai</button>
 
-        <label>Nilai Tugas</label><br>
-        <input type="number" id="tugas"><br><br>
+            <p id="hasil"></p>
 
-        <label>Nilai UTS</label><br>
-        <input type="number" id="uts"><br><br>
+        </form>
+      </section>
 
-        <label>Nilai UAS</label><br>
-        <input type="number" id="uas"><br><br>
+  <footer>
+    <p>Kontak: <a href="mailto:akhmadlafinizzatillah@gmail.com">akhmadlafinizzatillah@gmail.com</a> |
+      <a href="https://github.com/ALFIN-cloudj" target="_blank">GitHub</a> |
+      <a href="https://www.youtube.com/@AkhmadAlfinIzzatillah" target="_blank">YouTube</a></p>
+    <p>&copy; 2026 Mohammad Jiddan Firdaus. Dibuat di Kelas Industri UBIG.</p>
+  </footer>
 
-        <button onclick="hitungNilai()">Hitung</button>
-
-        <p id="hasil"></p>
-    </main>
-
-    <footer>
-        <p>Kontak: andi.pratama@example.com | GitHub | YouTube</p>
-        <p>© 2026 Andi Pratama. Dibuat dengan semangat belajar.</p>
-    </footer>
-
-    <script>
-        function hitungNilai() {
-            let tugas = Number(document.getElementById("tugas").value);
-            let uts = Number(document.getElementById("uts").value);
-            let uas = Number(document.getElementById("uas").value);
-
-            let rata = (tugas + uts + uas) / 3;
-            let predikat;
-
-            if (rata >= 85) {
-                predikat = "A";
-            } else if (rata >= 75) {
-                predikat = "B";
-            } else if (rata >= 65) {
-                predikat = "C";
-            } else {
-                predikat = "D";
-            }
-
-            document.getElementById("hasil").innerHTML =
-                "Rata-rata " + rata.toFixed(1) +
-                ", predikat " + predikat;
-        }
-    </script>
-
+  <script src="js/kalkulator.js"></script>
 </body>
 </html>
