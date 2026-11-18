@@ -193,7 +193,7 @@ document.querySelectorAll(".menu-ponsel").forEach((menu) => {
 
 
 // 5. Repositori GitHub terbaru (halaman Proyek)
-const username = "FadliAlfiyansyah";
+const username = "ALFIN-cloudj";
 const alamatRepo = `https://api.github.com/users/${username}/repos`;
 const pilihan = "?sort=updated&per_page=6";
 
