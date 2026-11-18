@@ -2,7 +2,7 @@
   {
     "judul": "Halaman Profil Pertama",
     "kategori": "HTML",
-    "gambar": "img/foto-profil.png",
+    "gambar": "img/proyek-profil (2).png",
     "alt": "Tangkapan layar halaman profil Fadli Alfiyansyah",
     "deskripsi": "Halaman web pertama saya, dibuat dengan HTML dasar."
   },
@@ -23,7 +23,7 @@
   {
     "judul": "Portofolio Responsif",
     "kategori": "CSS",
-    "gambar": "img/proyek-responsif.png",
+    "gambar": "img/proyek-portofolio.png",
     "alt": "Tangkapan layar portofolio di ponsel dan laptop",
     "deskripsi": "Rapi di ponsel, tablet, dan laptop dengan Flexbox."
   },
