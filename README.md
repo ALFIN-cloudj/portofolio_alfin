@@ -8,7 +8,7 @@ menggunakan HTML, CSS, dan JavaScript.
 
 ## Tampilan
 
-![Tampilan Portofolio](img/proyek-portofolio.png)
+![Tampilan Portofolio](img/proyek-Portofolio.png)
 
 ## Fitur
 
