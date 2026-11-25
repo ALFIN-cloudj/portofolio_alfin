@@ -1,4 +1,4 @@
-# Portofolio Akhmad Alfin Izzatillah
+# Portofolio v2 Akhmad Alfin Izzatillah
 
 Website portofolio pribadi yang saya buat di Kelas Industri UBIG
 (Paket 1, Minggu 01 sampai 09).
